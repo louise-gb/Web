@@ -1,0 +1,109 @@
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Stylez la barre de menu */
+.menu {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Stylez les liens de la barre de menu */
+.menu a {
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Changez la couleur des liens au survol */
+.menu a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* Ajoutez une classe active pour mettre en évidence la page actuelle */
+.menu a.active {
+    background-color: whitesmoke;
+    color: black;
+}
+
+menu {
+    background-color: #333;
+    overflow: hidden;
+}
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Partie responsive */
+
+
+.topnav {
+    overflow: hidden;
+    width: 50%;
+    background: green;
+    
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Parametrage de l'image  */
+
+img {
+       /* Centrer l'image */
+    display: block;
+        margin: 0 auto;
+        /* Ajouter des bordures rondes */
+        border-radius: 50%;
+        width: 325px;
+        margin-top: 2vh;
+}
+
+span{
+    text-align: left;
+    color: gray;
+    margin: 1%;
+    margin-top: 3% ;
+    width: 50%;
+}
+
