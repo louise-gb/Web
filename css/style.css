@@ -1,0 +1,246 @@
+body {
+    background-color: rgb(34, 33, 33);
+}
+
+header {
+    background-color: rgb(42, 42, 42);
+    padding: 20px;
+    color: white;
+    display: flex;
+    /* Utilisation de flexbox pour créer un conteneur flexible */
+    box-shadow: 0 4px 6px rgba(185, 174, 174, 0.1);
+}
+
+#nom-prenom {
+    float: left;
+    width: 200px;
+}
+
+#menu {
+
+    float: right;
+    width: 200px;
+    margin-left: auto;
+    /* Met le menu à droite */
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    /* Ajout de marge à droite entre les éléments */
+}
+
+#menu a:last-child {
+    margin-right: 0;
+    /* Aucune marge à droite pour le dernier élément */
+}
+
+#menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* pour la photo*/
+
+#photo-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    /* Pour centrer horizontalement */
+    margin-top: 20px;
+    /* Marge par rapport aux autres éléments */
+}
+
+#photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* pour la carousel*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(42, 42, 42);
+}
+
+.slider {
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+}
+
+.images {
+    display: flex;
+    width: 100%;
+}
+
+.images img {
+    height: 400px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+
+.images input {
+    display: none;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+
+.dots label:hover {
+    background: #fff;
+}
+
+#img1:checked~.m1 {
+    margin-left: 0;
+}
+
+#img2:checked~.m2 {
+    margin-left: -100%;
+}
+
+#img3:checked~.m3 {
+    margin-left: -200%;
+}
+
+#img4:checked~.m4 {
+    margin-left: -300%;
+}
+
+/* pour les flex box*/
+
+#maDiv {
+    margin: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pour la barre de contact*/
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-box {
+    display: flex;
+    margin-top: 50px;
+}
+
+.left {
+    flex: 1;
+    background-color: #696666; /* Couleur de fond pour la colonne gauche */
+}
+
+.right {
+    flex: 2;
+    padding: 20px;
+    background-color: #ffffff; /* Couleur de fond pour la colonne droite */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+h2 {
+    color: #333333; /* Couleur du texte du titre */
+}
+
+.field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; /* Couleur de la bordure des champs */
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #4caf50; /* Couleur de fond du bouton */
+    color: #ffffff; /* Couleur du texte du bouton */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049; /* Couleur de fond du bouton au survol */
+}
+
+
+
+
+
+
+
+
+/* pour le footer*/
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background:black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+
+.social-media i {
+    padding: 0px;
+    font-size: 15px;
+    color: #fff;
+}
+
+/* media queries*/
+
+
+
+
+
+
+
+
